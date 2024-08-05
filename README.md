@@ -17,9 +17,14 @@ Plik app.py jest aplikcają internetową w której można przeglądać dane wej�
 
 *Pobieranie*
 - Przy pobraniu wszystkich plików
+  
   -- pip install -r requierements.txt
+  
   -- streamlit app.py
+  
 - Przy używaniu dockera
+- 
   -- docker build --pull --rm -f "Dockerfile" -t projekt1:latest "."
+  
   -- docker run -p 8501:8501 projekt1 
   
