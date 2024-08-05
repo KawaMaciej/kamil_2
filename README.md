@@ -11,7 +11,7 @@ Użyto 9 różnych modeli klasyfikacyjnych przy treningu
 - XGBClassifier
 - LGBMClassifier
 - CatBoostClassifier
-- 
+
 Modele zostały wybrane za pomocą grid serach'a.
 Plik app.py jest aplikcają internetową w której można przeglądać dane wejściowe, modele oraz wykresy z nimi związane.
 
