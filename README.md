@@ -1,5 +1,5 @@
 To jest EDA danych związych z powikłaniami serca oraz próba modelowania klasyfikacyjnego:
-
+Dane zostały przeskalowane, użyto przy treningu metod redukcji wymiarowości.
 W pliku eda.ipynb znajduję się kod analiza danych wraz z modelami.
 Użyto 9 różnych modeli klasyfikacyjnych przy treningu
 - KNeighborsClassifier
@@ -11,6 +11,7 @@ Użyto 9 różnych modeli klasyfikacyjnych przy treningu
 - XGBClassifier
 - LGBMClassifier
 - CatBoostClassifier
+Modele zostały wybrane za pomocą grid serach'a.
 Plik app.py jest aplikcają internetową w której można przeglądać dane wejściowe, modele oraz wykresy z nimi związane.
 
 *Pobieranie*
