@@ -10,13 +10,10 @@ This repository contains the Exploratory Data Analysis (EDA)  and models for hea
 2. [Dataset](#dataset)
 3. [Analysis](#analysis)
 4. [Results](#results)
-5. [Usage](#usage)
-6. [Dependencies](#dependencies)
-7. [License](#license)
+5. [Requirements](#requirements)
 
 ## Introduction
 
-[Briefly describe the purpose of the EDA. What are you trying to achieve? Why is this analysis important?]
 
 ## Dataset
 
@@ -68,7 +65,7 @@ Analysis was made using python 3.11.9 with packages
 - lightgbm
 - steamlit
 
-## Running the Analysis
+### Running the Analysis
 
 ```bash
 # Using manual download
