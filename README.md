@@ -71,7 +71,7 @@ Analysis was made using python 3.11.9 with packages
 # Using manual download
   -- pip install -r requierements.txt
   
-  -- streamlit app.py
+  -- streamlit run app.py
 
 # Using Docker  
   -- docker build --pull --rm -f "Dockerfile" -t projekt1:latest "."
