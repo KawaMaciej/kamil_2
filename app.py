@@ -9,8 +9,8 @@ with open("model_information.json", "r") as f:
     model_information = json.load(f)  
 
 model_names = model_information["Names"]
-model_scalers = model_information["Scaling method"]
-model_confusion_matrices = model_information["Confusion Matrix"]
+model_scalers = model_information["Scaling_method"]
+model_confusion_matrices = model_information["Confusion_Matrix"]
 model_predictions = model_information["Predictions"]
 model_accuracy = model_information["Accuracy"]
 
@@ -20,10 +20,10 @@ unique_model_scalers = list(set(model_scalers))
 with open("data_information.json", "r") as f:
     data_information = json.load(f)
 
-X_train = data_information["training set"]
-X_test = data_information["test set"]
-Y_train = data_information["train actual"]
-Y_test = data_information["test actual"]
+X_train = data_information["training_set"]
+X_test = data_information["test_set"]
+Y_train = data_information["train_actual"]
+Y_test = data_information["test_actual"]
 
 ##############################################
 def roc_curve_plot(y, x):
