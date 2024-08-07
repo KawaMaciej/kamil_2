@@ -8,13 +8,13 @@ import matplotlib.pyplot as plt
 with open("model_information.json", "r") as f:
     model_information = json.load(f)  
 
-model_names = model_information["Names"]
+model_names = model_information["Unique_names"]
 model_scalers = model_information["Scaling_method"]
 model_confusion_matrices = model_information["Confusion_Matrix"]
 model_predictions = model_information["Predictions"]
 model_accuracy = model_information["Accuracy"]
 
-unique_model_names = list(set(model_names))
+unique_model_names = model_names
 unique_model_scalers = list(set(model_scalers))
 
 with open("data_information.json", "r") as f:
@@ -42,31 +42,8 @@ def roc_curve_plot(y, x):
     return fig
 ##############################################
 
-st.title("Hello, World!")
-st.markdown("This is a simple app.")
+st.title("Streamlit App for classification models")
 
-with st.sidebar:
-    st.header("Configuration")
-    uploaded_file = st.file_uploader("Choose a file")
-
-if uploaded_file is None:
-    st.info(" Upload a file through config", icon="ℹ️")
-    st.stop()
-
-
-@st.cache_data
-def load_data(path: str):
-    df = pd.read_csv(path)
-    return df
-
-
-data = load_data(uploaded_file)
-
-with st.expander("Data Preview"):
-    st.dataframe(
-        data,
-        column_config={"Data": st.column_config.NumberColumn(format="%d")},
-    )
 
 tabs = st.tabs(unique_model_names)
 
